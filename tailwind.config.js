@@ -1,12 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ["class"],
+  darkMode: "class",
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./layouts/**/*.{ts,tsx}",
+    "./modules/**/*.{ts,tsx}",
+    "./providers/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    // "./src/**/*.{ts,tsx}",
+  ],
   theme: {
     container: {
       center: true,
@@ -72,5 +75,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
-}
+  plugins: [require.resolve("tailwindcss-animate")],
+};
